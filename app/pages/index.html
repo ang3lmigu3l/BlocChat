@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
     <link rel="stylesheet" href="/styles/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 </head>
 <body>
+    
+    <ui-view></ui-view>
+    
+    
+    <!-- Firebase Info --->
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBC1TRfpu-OelvLEUCxzR0MYEvxeVZg3Kw",
+        authDomain: "blocchat-69d69.firebaseapp.com",
+        databaseURL: "https://blocchat-69d69.firebaseio.com",
+        storageBucket: "blocchat-69d69.appspot.com",
+        messagingSenderId: "327789502711"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- Ui.Router --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script> 
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <!-- blocChat module --->
     <script src="/scripts/app.js"></script>
 </body>
 </html>

@@ -1,1 +1,14 @@
-<h1>Home Page</h1>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <h2 class="centered">Chat Rooms</h2>  
+    <div class="list-group">
+      <a  href="#" ng-repeat= "room in rooms" class="list-group-item capitalize"> {{room.name}} </a>
+    </div>
+
+    <div class="centered" ng-controller="ModalCtrl as modal"> 
+    <button class="btn btn-primary" ng-click="modal.openModal()"> New Chat Room </button>
+    </div>
+
+</div>
+<div class="col-md-9">
+
+</div>

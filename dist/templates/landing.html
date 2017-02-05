@@ -1,7 +1,7 @@
 <div class="col-md-3 col-sm-4 col-xs-6">
     <h2 class="centered">Chat Rooms</h2>  
     <div class="list-group">
-      <a  href="#" ng-repeat= "room in rooms" class="list-group-item capitalize"> {{room.name}} </a>
+      <a  href="#" ng-repeat= "room in rooms" ng-click="setCurrentRoom(room)" class="list-group-item capitalize"> {{room.name}} </a>
     </div>
 
     <div class="centered" ng-controller="ModalCtrl as modal"> 
@@ -10,5 +10,7 @@
 
 </div>
 <div class="col-md-9">
+    <h1>{{currentRoom.name}} </h1>
+    <h3 ng-repeat="message in messages">{{message.content}} test</h3>
 
 </div>

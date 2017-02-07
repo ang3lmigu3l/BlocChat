@@ -9,12 +9,55 @@
 .logo {
     height: 40px;
     padding-top:5px;
-    padding-bottom: 5px;
-    
-    
+    padding-bottom: 5px; 
 }
 
 .navbar-default {
     background-color:#0099E8;
     border-color:#0086D4;
+}
+
+.messages {
+    position:relative;
+    border:1px solid #DCDCDC;
+    border-radius: 5px;
+    height: 99vh;
+    padding-bottom: 150px;
+}
+.msg {
+    font-size: 1.2rem;
+    color: white;
+    width: inherit;
+    border: 1px solid white;
+    background-color: #1E90FF;
+    border-radius: 11px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.msg>span {
+    display:block;
+    height: 10px;
+    font-size: 9px;
+    text-align: right;
+}
+
+
+.messages >.input-group {
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.blue {
+    background-color:#1E90FF;
+    color: white;
+}
+
+.right {
+    float:right;
 }

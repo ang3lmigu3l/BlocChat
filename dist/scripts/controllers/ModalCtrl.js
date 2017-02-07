@@ -14,8 +14,7 @@
                     $scope.create = function(){
                         $uibModalInstance.close($scope.newRoom);
                     };
-                },
-                
+                },  
             });
             modalInstance.result.then(function(data){
                     Room.add(data);
